@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VoyaPH - Your ultimate travel guide to the Philippines. Discover beautiful destinations, rich culture, and essential travel tips for your next Philippine voyage.">
+    <meta name="keywords" content="Philippines travel, VoyaPH, Philippine tourist spots, travel guide, Philippine culture, vacation">
+    <meta name="author" content="VoyaPH">
+    <title>VoyaPH | Discover the Beauty of the Philippines</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#" class="logo">Voya<span>PH</span></a>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="site-nav" id="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-only"><a href="#" onclick="openModal(); return false;" class="nav-cta">Join Our Voyage</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn header-cta" onclick="openModal()">Join Our Voyage</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>Begin Your Philippine Voyage</h1>
+                <p>Explore over 7,000 islands of pristine beaches, vibrant culture, and unforgettable adventures. Let VoyaPH be your compass.</p>
+                <button class="cta-btn primary-btn" onclick="openModal()">Plan Your Trip</button>
+            </div>
+        </section>
+
+        <section id="destinations" class="destinations-section">
+            <div class="container">
+                <h2 class="section-title">Popular Destinations</h2>
+                <div class="grid-layout">
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('./images/Palawan.webp');"></div>
+                        <div class="card-content">
+                            <h3>Palawan</h3>
+                            <p>Discover crystal-clear waters, limestone cliffs, and the world-renowned Underground River.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('./images/Bantayan.webp');"></div>
+                        <div class="card-content">
+                            <h3>Northern Cebu</h3>
+                            <p>Relax on the pristine white sands of Bantayan Island or dive with thresher sharks in Malapascua.</p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img" style="background-image: url('./images/Bohol.webp');"></div>
+                        <div class="card-content">
+                            <h3>Bohol</h3>
+                            <p>Witness the geological marvel of the Chocolate Hills and meet the adorable, tiny tarsiers.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="culture" class="culture-section">
+            <div class="container">
+                <h2 class="section-title">Travel Tips & Culture</h2>
+                <div class="info-layout">
+                    <div class="info-block">
+                        <h3>The Filipino Hospitality</h3>
+                        <p>Experience the warmth of the locals. Filipinos are known worldwide for their welcoming smiles and eagerness to share their culture, making you feel at home the moment you arrive.</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Getting Around</h3>
+                        <p>From iconic, colorful Jeepneys to tricycles and domestic flights, navigating the archipelago is an adventure in itself. We recommend booking ferry and bus tickets in advance during peak seasons.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About VoyaPH</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Your Compass to the Pearl of the Orient</h3>
+                        <p>VoyaPH was born out of a passion for the Philippines' breathtaking landscapes and vibrant heritage. Our mission is to bridge the gap between curious travelers and the hidden gems of our 7,000+ islands.</p>
+                        <p>Whether you're seeking the thrill of a deep dive, the serenity of a secluded white-sand beach, or the warmth of local festivities, we provide curated guides and tips to make your voyage unforgettable.</p>
+                    </div>
+                    <div class="about-image" style="background-image: url('./images/Batanes.webp');"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Email:</strong> group2@voyaph.com</p>
+                        <p><strong>Phone:</strong> +63 912 345 6789</p>
+                        <p><strong>Address:</strong> Cebu, Philippines</p>
+                        <div class="social-links">
+                            <a href="#">Facebook</a> &nbsp;|&nbsp; 
+                            <a href="#">Instagram</a> &nbsp;|&nbsp; 
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <h3>Ready to plan your trip?</h3>
+                        <p>Fill out our quick travel preference form and let our experts curate a guide for your next adventure.</p>
+                        <br>
+                        <button class="cta-btn primary-btn" onclick="openModal()">Open Inquiry Form</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Voya<span>PH</span></h2>
+                <p>Your journey starts here.</p>
+            </div>
+            <div class="footer-sitemap">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#culture">Culture</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VoyaPH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="formModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Join Our Voyage</h2>
+            <p>Tell us your travel preferences and we'll send you a curated guide!</p>
+            
+            <div class="iframe-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPbLPE71wbm7KVLnaQGjVMCPZk_tuy55s2jOj5GwLBTT5oLA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Modal Logic
+        function openModal() {
+            document.getElementById('formModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevents background scrolling
+        }
+
+        function closeModal() {
+            document.getElementById('formModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            let modal = document.getElementById('formModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Hamburger Menu Logic
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.site-nav ul li a');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
