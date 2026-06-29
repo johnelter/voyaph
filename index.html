@@ -8,10 +8,6 @@
     <meta name="author" content="VoyaPH">
     <title>VoyaPH | Discover the Beauty of the Philippines</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,7 +24,7 @@
 
             <nav class="site-nav" id="nav-menu">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#destinations">Destinations</a></li>
                     <li><a href="#culture">Culture</a></li>
                     <li><a href="#about">About</a></li>
@@ -145,7 +141,7 @@
             <div class="footer-sitemap">
                 <h3>Site Map</h3>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#destinations">Destinations</a></li>
                     <li><a href="#culture">Culture</a></li>
                     <li><a href="#about">About</a></li>
@@ -170,41 +166,6 @@
         </div>
     </div>
 
-    <script>
-        // Modal Logic
-        function openModal() {
-            document.getElementById('formModal').style.display = 'flex';
-            document.body.style.overflow = 'hidden'; // Prevents background scrolling
-        }
-
-        function closeModal() {
-            document.getElementById('formModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        window.onclick = function(event) {
-            let modal = document.getElementById('formModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
-        // Hamburger Menu Logic
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
-        const navLinks = document.querySelectorAll('.site-nav ul li a');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
