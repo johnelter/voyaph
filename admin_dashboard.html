@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoyaPH · Admin Dashboard</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Separate CSS file -->
+    <link rel="stylesheet" href="admin_dashboard.css" />
+</head>
+<body>
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fas fa-compass"></i>
+            <a href="#" class="logo">Voya<span>PH</span></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-umbrella-beach"></i> Destinations</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Travelers</a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> Bookings</a></li>
+                <li><a href="#"><i class="fas fa-flag"></i> Culture &amp; Tips</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Inquiries</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-mini">
+                <img src="https://ui-avatars.com/api/?name=Maria+Santos&background=1d3557&color=fff&size=32" alt="avatar" />
+                <div>
+                    <span class="name">Maria Santos</span>
+                    <span class="role">Admin</span>
+                </div>
+            </div>
+            <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div class="greeting">
+                <h1>Good morning, Maria 👋</h1>
+                <p class="sub">Here's what's happening with your destinations today.</p>
+            </div>
+            <div class="top-actions">
+                <button class="icon-btn"><i class="fas fa-bell"></i></button>
+                <button class="icon-btn"><i class="fas fa-message"></i></button>
+                <button class="btn-primary"><i class="fas fa-plus-circle"></i> New</button>
+            </div>
+        </header>
+
+        <!-- STATS ROW -->
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-left">
+                    <span class="stat-label">Total Destinations</span>
+                    <span class="stat-number">24</span>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +12%</span>
+                </div>
+                <div class="stat-icon"><i class="fas fa-map-pin"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-left">
+                    <span class="stat-label">Active Voyagers</span>
+                    <span class="stat-number">1,842</span>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +8.2%</span>
+                </div>
+                <div class="stat-icon"><i class="fas fa-user-friends"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-left">
+                    <span class="stat-label">Total Reviews</span>
+                    <span class="stat-number">312</span>
+                    <span class="stat-change positive"><i class="fas fa-arrow-up"></i> +5.4%</span>
+                </div>
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-left">
+                    <span class="stat-label">Pending Bookings</span>
+                    <span class="stat-number">8</span>
+                    <span class="stat-change negative"><i class="fas fa-arrow-down"></i> -2.1%</span>
+                </div>
+                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            </div>
+        </section>
+
+        <!-- CHARTS + QUICK STATS -->
+        <div class="charts-row">
+            <div class="chart-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-chart-line"></i> Visits Overview</h3>
+                    <span class="badge">Last 30 days</span>
+                </div>
+                <div class="chart-placeholder">
+                    <div class="bar-chart">
+                        <div class="bar" style="height: 60%;"></div>
+                        <div class="bar" style="height: 85%;"></div>
+                        <div class="bar" style="height: 45%;"></div>
+                        <div class="bar" style="height: 92%;"></div>
+                        <div class="bar" style="height: 70%;"></div>
+                        <div class="bar" style="height: 55%;"></div>
+                        <div class="bar" style="height: 88%;"></div>
+                        <div class="bar" style="height: 40%;"></div>
+                        <div class="bar" style="height: 78%;"></div>
+                        <div class="bar" style="height: 95%;"></div>
+                        <div class="bar" style="height: 62%;"></div>
+                        <div class="bar" style="height: 50%;"></div>
+                    </div>
+                    <p class="chart-label">Monthly traffic trend</p>
+                </div>
+            </div>
+            <div class="chart-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-tag"></i> Top Destinations</h3>
+                    <span class="badge">Popular</span>
+                </div>
+                <ul class="top-list">
+                    <li><span>Palawan</span> <span class="value">4.8 ★ (124)</span></li>
+                    <li><span>Bohol</span> <span class="value">4.7 ★ (98)</span></li>
+                    <li><span>Bantayan</span> <span class="value">4.6 ★ (76)</span></li>
+                    <li><span>Batanes</span> <span class="value">4.5 ★ (52)</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- DESTINATION TABLE -->
+        <div class="panel-card">
+            <div class="panel-header">
+                <h2><i class="fas fa-edit"></i> Manage Destinations</h2>
+                <div class="panel-actions">
+                    <button class="btn-outline"><i class="fas fa-sliders-h"></i> Filter</button>
+                    <button class="btn-primary"><i class="fas fa-plus-circle"></i> Add</button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destination</th>
+                            <th>Region</th>
+                            <th>Status</th>
+                            <th>Rating</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Palawan</strong></td>
+                            <td>Mimaropa</td>
+                            <td><span class="status-badge published"><i class="fas fa-circle"></i> Published</span></td>
+                            <td>4.8 ★</td>
+                            <td>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn"><i class="fas fa-pen"></i></button>
+                                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bantayan</strong></td>
+                            <td>Central Visayas</td>
+                            <td><span class="status-badge published"><i class="fas fa-circle"></i> Published</span></td>
+                            <td>4.6 ★</td>
+                            <td>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn"><i class="fas fa-pen"></i></button>
+                                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bohol</strong></td>
+                            <td>Central Visayas</td>
+                            <td><span class="status-badge published"><i class="fas fa-circle"></i> Published</span></td>
+                            <td>4.7 ★</td>
+                            <td>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn"><i class="fas fa-pen"></i></button>
+                                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Batanes</strong></td>
+                            <td>Cagayan Valley</td>
+                            <td><span class="status-badge draft"><i class="fas fa-circle"></i> Draft</span></td>
+                            <td>4.5 ★</td>
+                            <td>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                <button class="action-btn"><i class="fas fa-pen"></i></button>
+                                <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <span>Showing 1–4 of 24</span>
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">…</button>
+                    <button class="page-btn">6</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENT ACTIVITY -->
+        <div class="panel-card activity-card">
+            <div class="panel-header">
+                <h2><i class="fas fa-history"></i> Recent Activity</h2>
+                <span class="live-badge"><i class="fas fa-circle"></i> Live</span>
+            </div>
+            <div class="activity-feed">
+                <div class="activity-item">
+                    <div class="activity-icon green"><i class="fas fa-plus"></i></div>
+                    <div class="activity-content">
+                        <strong>Palawan</strong> itinerary updated
+                        <span class="time">2 min ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon blue"><i class="fas fa-user-plus"></i></div>
+                    <div class="activity-content">
+                        New traveler <strong>James Cruz</strong> registered
+                        <span class="time">18 min ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon gold"><i class="fas fa-star"></i></div>
+                    <div class="activity-content">
+                        5-star review for <strong>Bohol</strong> by Anna L.
+                        <span class="time">1 hour ago</span>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon orange"><i class="fas fa-flag"></i></div>
+                    <div class="activity-content">
+                        Culture tip <strong>"Sinulog Festival"</strong> added
+                        <span class="time">3 hours ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
